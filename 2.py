@@ -9,3 +9,7 @@ def wordScore(s):
         else:
             n+=1
     return n
+
+
+s = input("Word: ")
+print(wordScore(s))
