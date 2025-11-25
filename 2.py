@@ -13,3 +13,4 @@ def wordScore(s):
 
 s = input("Word: ")
 print(wordScore(s))
+print("gfds")
