@@ -18,24 +18,13 @@ class Student:
         print(f'Grades: {self.li}')
 
     def MaxGrade(self):
-        max_grade = self.li[0]
-        for i in self.li:
-            if i>max_grade:
-                max_grade = i
-        return max_grade
+        return max(self.li)
     
     def MinGrade(self):
-        min_grade = self.li[0]
-        for i in self.li:
-            if i<min_grade:
-                min_grade = i
-        return min_grade
+        return min(self.li)
     
     def MO_Grade(self):
-        sum_grade = 0
-        for i in self.li:
-            sum_grade+=i
-        return sum_grade/8
+        return sum(self.li)/8
     
 s = Student()
 s.SetData()
